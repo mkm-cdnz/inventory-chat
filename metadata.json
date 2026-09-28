@@ -1,0 +1,6 @@
+{
+  "name": "Matt Millar Hardware Catalogue",
+  "description": "Structured, evidence-grounded hardware catalogue for makers, engineers, and autonomous agents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

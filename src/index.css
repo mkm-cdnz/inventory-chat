@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* Matt Millar Brand System v2.0 */
+:root {
+  --mm-primary-dark: #2c3e50;
+  --mm-secondary-dark: #34495e;
+  --mm-accent-blue: #3498db;
+  --mm-accent-blue-dark: #2980b9;
+  --mm-body-text: #333333;
+  --mm-muted-text: #7f8c8d;
+  --mm-light-gray: #ecf0f1;
+  --mm-background: #ffffff;
+  --mm-light-accent: rgba(52, 152, 219, 0.10);
+  --mm-gradient-primary: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  --mm-gradient-accent: linear-gradient(to right, #3498db, #2980b9);
+  --mm-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --mm-radius-sm: 4px;
+  --mm-radius-lg: 8px;
+}
+
+body {
+  font-family: var(--mm-font);
+  color: var(--mm-body-text);
+  background-color: var(--mm-background);
+  line-height: 1.55;
+}
+
+.mm-gradient-primary {
+  background: var(--mm-gradient-primary);
+}
+
+.mm-gradient-accent {
+  background: var(--mm-gradient-accent);
+}
+
+.mm-section-rule {
+  width: 56px;
+  height: 3px;
+  background: var(--mm-accent-blue);
+  border-radius: 2px;
+}
+
+.mm-highlight {
+  background: var(--mm-light-accent);
+  border-left: 3px solid var(--mm-accent-blue);
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+}
+
+.mm-card {
+  background: #ffffff;
+  border: 1px solid var(--mm-light-gray);
+  border-radius: 8px;
+}
+
+a {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--mm-accent-blue);
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 2px solid var(--mm-accent-blue);
+  outline-offset: 2px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

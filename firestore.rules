@@ -1,0 +1,17 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Hardware catalogue items
+    match /hardware_items/{itemId} {
+      // Anyone can read catalogued hardware
+      allow read: if true;
+      // Authenticated users and authorized tools/agents can write/update
+      allow write: if request.auth != null;
+    }
+    // Hardware revisions and audit trails
+    match /hardware_revisions/{revId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+  }
+}
